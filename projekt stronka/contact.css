@@ -41,11 +41,7 @@ footer {
   bottom: 0;
   font-family: Lora;
 }
-@media (max-width: 768px) {
-  .formularz {
-    width: 100%;
-  }
-}
+
 .formularz {
   width: 40%;
   margin: auto;
@@ -140,4 +136,10 @@ h2 {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  .formularz {
+    width: 100%;
+    margin: auto;
+  }
 }
