@@ -46,21 +46,16 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .spadeking {
-  display: inline-block;
-  width: 160px;
-  float: right;
-  margin-left: 250px;
-  margin-right: 50px;
-  margin-bottom: 30px;
-  margin-top: 23px;
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
 }
 .heartking {
-  display: inline-block;
-  width: 160px;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  margin-top: 23px;
-  float: left;
+  display: block;
+  width: 30%;
+  margin: auto;
+  margin-top: 30px;
 }
 .stasi {
   display: inline-block;
@@ -136,6 +131,7 @@ footer {
 }
 .materiały {
   width: 45%;
+  display: block;
   border: solid;
   border-color: black;
   padding: 10px;
@@ -175,15 +171,6 @@ footer {
   font-style: italic;
 }
 @media (max-width: 768px) {
-  .spadeking {
-    margin-left: 0;
-    width: 80px;
-    margin-right: 20px;
-  }
-  .heartking {
-    width: 80px;
-    margin-left: 20px;
-  }
   .regularne {
     margin: auto;
     margin-top: 15px;
