@@ -42,11 +42,8 @@ footer {
   font-family: Lora;
 }
 @media (max-width: 768px) {
-  .gallery-item h3 {
-    font-size: 1em;
-  }
-  .gallery-item p {
-    font-size: 0.9em;
+  .formularz {
+    width: 100%;
   }
 }
 .formularz {
