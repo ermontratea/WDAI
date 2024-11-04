@@ -175,10 +175,25 @@ footer {
   font-style: italic;
 }
 @media (max-width: 768px) {
-  .gallery-item h3 {
-    font-size: 1em;
+  .spadeking {
+    margin-left: 0;
+    width: 100px;
+    margin-right: 20px;
   }
-  .gallery-item p {
-    font-size: 0.9em;
+  .heartking {
+    width: 100px;
+    margin-left: 20px;
+  }
+  .regularne {
+    margin: auto;
+    display: block;
+  }
+  .eventy {
+    margin: auto;
+    display: block;
+  }
+  .materiały {
+    margin: auto;
+    display: block;
   }
 }
