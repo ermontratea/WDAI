@@ -147,11 +147,13 @@ footer {
 .h1 {
   text-align: center;
   font-family: Bona Nova SC;
+  color: black;
 }
 .h1bridge {
-  background-color: rgb(100, 12, 12);
+  background-color: rgb(151, 21, 21);
   padding: 5px;
   border-radius: 10px;
+  color: black;
 }
 .bona-nova-sc-regular {
   font-family: "Bona Nova SC", serif;
