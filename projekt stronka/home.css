@@ -177,22 +177,28 @@ footer {
 @media (max-width: 768px) {
   .spadeking {
     margin-left: 0;
-    width: 100px;
+    width: 80px;
     margin-right: 20px;
   }
   .heartking {
-    width: 100px;
+    width: 80px;
     margin-left: 20px;
   }
   .regularne {
+    margin-top: 15px;
+    width: 80%;
     margin: auto;
     display: block;
   }
   .eventy {
+    margin-top: 15px;
+    width: 80%;
     margin: auto;
     display: block;
   }
   .materiały {
+    margin-top: 15px;
+    width: 80%;
     margin: auto;
     display: block;
   }
