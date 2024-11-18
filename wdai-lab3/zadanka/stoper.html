@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stoper</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        background-color: lightblue;
+      }
+      #timer {
+        margin: 10px;
+      }
+      button {
+        background-color: rgb(117, 149, 219);
+        font-size: large;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stoper</h1>
+    <div id="timer">0s</div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <button id="resetButton">Reset</button>
+
+    <script>
+      let stoperInterval;
+      let licznikCzasu = 0;
+
+      function updateDisplay() {
+        const minuty = Math.floor(licznikCzasu / 60);
+        const sekundy = licznikCzasu % 60;
+        document.getElementById("timer").textContent =
+          minuty > 0 ? `${minuty}min ${sekundy}s` : `${sekundy}s`;
+      }
+
+      document.getElementById("startButton").addEventListener("click", () => {
+        if (!stoperInterval) {
+          stoperInterval = setInterval(() => {
+            licznikCzasu++;
+            updateDisplay();
+          }, 1000);
+        }
+      });
+
+      document.getElementById("stopButton").addEventListener("click", () => {
+        clearInterval(stoperInterval);
+        stoperInterval = null;
+      });
+
+      document.getElementById("resetButton").addEventListener("click", () => {
+        clearInterval(stoperInterval);
+        stoperInterval = null;
+        licznikCzasu = 0;
+        updateDisplay();
+      });
+    </script>
+  </body>
+</html>

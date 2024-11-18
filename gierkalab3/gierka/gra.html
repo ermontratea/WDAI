@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zombie Shooter</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+      }
+      canvas {
+        display: block;
+      }
+      #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+      }
+      #overlay button {
+        padding: 10px 20px;
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay">
+      <div style="display: block">Game Over!</div>
+      <button onclick="startGame()">Restart</button>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+
+    <audio id="gameOverSound" src="images/sad-music.mp3"></audio>
+    <script src="game.js"></script>
+  </body>
+</html>
